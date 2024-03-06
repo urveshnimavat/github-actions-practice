@@ -1,5 +1,9 @@
 name: Notify channels
-on: workflow_dispatch
+on: 
+  workflow_run:
+    workflows: ["Lint, test and Deploy Project"]
+    types:
+      - completed
 jobs:
   Notify:
     runs-on: ubuntu-latest
