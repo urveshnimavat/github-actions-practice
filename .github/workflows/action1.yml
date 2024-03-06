@@ -14,3 +14,5 @@ jobs:
 
       - name: Run Action 2
         run: gh workflow run --repo urveshnimavat/github-actions-practice action2.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
