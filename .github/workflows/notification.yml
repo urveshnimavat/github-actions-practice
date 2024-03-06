@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Notify MS Teams channel
-        run: echo 'Notifying teams channel....'
+        run: echo 'Notifying teams channel...'
