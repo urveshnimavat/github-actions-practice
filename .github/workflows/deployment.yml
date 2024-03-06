@@ -28,4 +28,4 @@ jobs:
       - name: Deploy project
         run: echo "Deploying project..."
       - name: notify result
-        run: gh workflow run 'Notify channels' --ref main 
+        run: gh workflow run notification.yml --ref main 
