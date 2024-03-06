@@ -1,0 +1,16 @@
+name: Action 1
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_action2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Action 2
+        run: gh workflow run --repo urveshnimavat/github-actions-practice action2.yml
