@@ -1,0 +1,8 @@
+name: Notify channels
+on: workflow_dispatch
+jobs:
+  Notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify MS Teams channel
+        run: echo 'Notifying teams channel....'

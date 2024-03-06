@@ -25,3 +25,5 @@ jobs:
         run: npm run build
       - name: Deploy project
         run: echo "Deploying project..."
+      - name: notify result
+        run: gh workflow run 'Notify channels' --ref main 
